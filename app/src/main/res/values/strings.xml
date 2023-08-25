@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">QaarenApp</string>
+    <string name="str_qaaren">Qaaren</string>
+    <string name="str_name">Name</string>
+    <string name="str_email">Email</string>
+    <string name="str_password">Password</string>
+    <string name="str_confirmPassword">Confirm Password</string>
+    <string name="str_signup">SignUp</string>
+    <string name="str_login">Login</string>
+    <string name="str_alreadyhaveAccount">Already have an Account?</string>
+</resources>
