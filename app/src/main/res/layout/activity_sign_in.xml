@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".SignInActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <ImageView
+            android:id="@+id/singup_logo"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_36sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/qaaren_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_email"
+            style="@style/CustomTextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_22sdp"
+            android:layout_marginTop="@dimen/_36sdp"
+            android:layout_marginEnd="@dimen/_22sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/singup_logo">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="sans-serif"
+                android:hint="@string/str_email"
+                android:textColor="@color/black"
+                android:inputType="textEmailAddress"
+                android:textColorHighlight="@color/black"
+                android:textColorHint="@color/black" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintEnd_toEndOf="@+id/layout_email"
+            app:layout_constraintStart_toStartOf="@+id/layout_email"
+            app:layout_constraintTop_toBottomOf="@+id/layout_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/ebrima_regular"
+                android:hint="@string/str_password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_signin"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:drawablePadding="@dimen/_8sdp"
+            android:text="@string/str_signin"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            app:cornerRadius="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="@+id/layout_password"
+            app:layout_constraintStart_toStartOf="@+id/layout_password"
+            app:layout_constraintTop_toBottomOf="@+id/layout_password" />
+
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="#CACACA"
+            android:layout_marginEnd="@dimen/_16sdp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_signinusing"
+            app:layout_constraintStart_toStartOf="@id/btn_signin"
+            app:layout_constraintTop_toBottomOf="@id/btn_signin" />
+
+        <TextView
+            android:id="@+id/tv_signinusing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_signinusing"
+            app:layout_constraintBottom_toBottomOf="@id/line1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/line1" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="#CACACA"
+            android:layout_marginStart="@dimen/_16sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/line1"
+            app:layout_constraintEnd_toEndOf="@+id/btn_signin"
+            app:layout_constraintStart_toEndOf="@+id/tv_signinusing"
+            app:layout_constraintTop_toBottomOf="@id/btn_signin" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_facebook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:drawableStart="@drawable/ic_facebook"
+            android:gravity="center"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:text="@string/str_facebook"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toStartOf="@+id/tv_signinusing"
+            app:layout_constraintStart_toStartOf="@id/line1"
+            app:layout_constraintTop_toBottomOf="@id/tv_signinusing" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_google"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_google"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:text="@string/str_google"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_facebook"
+            app:layout_constraintEnd_toEndOf="@+id/line2"
+            app:layout_constraintStart_toEndOf="@+id/tv_signinusing"
+            app:layout_constraintTop_toTopOf="@+id/btn_facebook" />
+
+        <TextView
+            android:id="@+id/tv_donthaveaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/ebrima_regular"
+            android:text="@string/str_donthaveaccount"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="normal"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/btn_google"
+            app:layout_constraintStart_toStartOf="@+id/btn_facebook"
+            app:layout_constraintTop_toBottomOf="@+id/btn_facebook" />
+
+
+        <TextView
+            android:id="@+id/tv_signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:fontFamily="@font/ebrima_regular"
+            android:text="@string/str_signin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_donthaveaccount"
+            app:layout_constraintStart_toEndOf="@id/tv_donthaveaccount"
+            app:layout_constraintTop_toTopOf="@id/tv_donthaveaccount" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/ebrima_regular"
+            android:text="@string/str_skiplogin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal"
+            android:padding="@dimen/_4sdp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_donthaveaccount" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

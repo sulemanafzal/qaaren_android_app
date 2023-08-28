@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">QaarenApp</string>
+
+    //Sign up
     <string name="str_qaaren">Qaaren</string>
     <string name="str_name">Name</string>
     <string name="str_email">Email</string>
@@ -8,4 +10,17 @@
     <string name="str_signup">SignUp</string>
     <string name="str_login">Login</string>
     <string name="str_alreadyhaveAccount">Already have an Account?</string>
+
+
+    // Sign In
+
+    <string name="str_emailaddres">Email Address</string>
+    <string name="str_signinusing">or sign in using</string>
+    <string name="str_facebook">Facebook</string>
+    <string name="str_google">Google</string>
+    <string name="str_signin">Sign In</string>
+    <string name="str_donthaveaccount">Don\'t have an account?</string>
+    <string name="str_skiplogin">Skip Login</string>
+
+
 </resources>
