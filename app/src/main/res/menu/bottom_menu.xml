@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/newsFragment"
+        android:icon="@drawable/person"
+        android:title="Profile"
+        app:background="@drawable/bg_bottom_nav_item"
+        app:iconGravity="start"/>
+
+    <item
+        android:id="@+id/opinionFragment"
+        android:icon="@drawable/categories"
+        android:title="Category"
+        app:background="@drawable/bg_bottom_nav_item"
+        app:iconGravity="start"/>
+
+    <item
+        android:id="@+id/threndingFragment"
+        android:icon="@drawable/home"
+        android:title="Home"
+        app:background="@drawable/bg_bottom_nav_item"
+
+        app:iconGravity="start"/>
+
+    <item
+        android:id="@+id/archFragment"
+        android:icon="@drawable/settings"
+        android:title="Setting"
+        app:background="@drawable/bg_bottom_nav_item"
+        app:iconGravity="start"/>
+
+    <item
+        android:id="@+id/aaaa"
+        android:icon="@drawable/bell"
+        app:background="@drawable/bg_bottom_nav_item"
+        android:title="Notification"
+        app:iconGravity="start"/>
+</menu>

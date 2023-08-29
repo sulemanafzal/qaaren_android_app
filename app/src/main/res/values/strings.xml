@@ -21,6 +21,9 @@
     <string name="str_signin">Sign In</string>
     <string name="str_donthaveaccount">Don\'t have an account?</string>
     <string name="str_skiplogin">Skip Login</string>
+    <string name="str_iphone_14_pro">Iphone 14 Pro</string>
+    <string name="_4_5">4.5</string>
+    <string name="str_price_range">Price Range</string>
 
 
 </resources>
