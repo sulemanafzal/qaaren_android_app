@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/gray"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_6sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/tv_itemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_manrope_bold"
+                android:text="@string/str_iphone_14_pro"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:layout_margin="@dimen/_8sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/tv_companyname"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:scaleType="centerCrop"
+                android:layout_margin="@dimen/_8sdp"
+                android:fontFamily="@font/font_manrope_bold"
+                android:src="@drawable/amazonlogo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/font_manrope_regular"
+                android:text="@string/str_price"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@id/tv_itemName"
+                app:layout_constraintTop_toBottomOf="@+id/tv_itemName" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:fontFamily="@font/font_manrope_medium"
+                android:text="@string/str_sar_1180"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/textview"
+                app:layout_constraintStart_toEndOf="@+id/textview"
+                app:layout_constraintTop_toTopOf="@id/textview" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_location_type"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/font_manrope_regular"
+                app:layout_constraintTop_toBottomOf="@id/tv_price"
+                app:layout_constraintStart_toStartOf="@id/textview"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:id="@+id/textview_location"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_local"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="@string/str_local"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/font_manrope_medium"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/textview_location"
+                app:layout_constraintStart_toEndOf="@+id/textview_location"
+                app:layout_constraintTop_toTopOf="@+id/textview_location" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_nearest"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:id="@+id/tv_nearest"
+                android:fontFamily="@font/font_manrope_regular"
+                app:layout_constraintStart_toStartOf="@+id/textview_location"
+                app:layout_constraintTop_toBottomOf="@+id/textview_location" />
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_manrope_medium"
+                android:text="NO"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_nearest"
+                app:layout_constraintStart_toEndOf="@+id/tv_nearest"
+                app:layout_constraintTop_toTopOf="@+id/tv_nearest" />
+
+
+            <TextView
+                android:id="@+id/tv_reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_reviews"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@+id/tv_nearest"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nearest" />
+
+            <RatingBar
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rating="4"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:theme="@style/RatingBar"
+                android:layout_marginStart="@dimen/_4sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_reviews"
+                app:layout_constraintStart_toEndOf="@+id/tv_reviews"
+                app:layout_constraintTop_toTopOf="@+id/tv_reviews" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:text="@string/str_rating"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/rating"
+                app:layout_constraintStart_toEndOf="@+id/rating"
+                app:layout_constraintTop_toTopOf="@+id/rating" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:text="12-12-2023"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tv_companyname"
+                app:layout_constraintTop_toTopOf="@+id/textView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

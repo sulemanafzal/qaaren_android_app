@@ -80,7 +80,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
-                android:fontFamily="@font/manrope_regular"
+                android:fontFamily="@font/font_manrope_regular"
                 android:hint="@string/str_email" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -102,7 +102,7 @@
                 android:id="@+id/et_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/manrope_regular"
+                android:fontFamily="@font/font_manrope_regular"
                 android:hint="@string/str_password"
                 android:background="@android:color/transparent"
                 android:inputType="textPassword"/>
@@ -125,7 +125,7 @@
                 android:id="@+id/et_conferPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/manrope_regular"
+                android:fontFamily="@font/font_manrope_regular"
                 android:hint="@string/str_confirmPassword"
                 android:background="@android:color/transparent"
                 android:inputType="textPassword" />

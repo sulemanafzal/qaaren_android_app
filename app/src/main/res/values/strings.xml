@@ -24,6 +24,16 @@
     <string name="str_iphone_14_pro">Iphone 14 Pro</string>
     <string name="_4_5">4.5</string>
     <string name="str_price_range">Price Range</string>
+    <string name="str_starting_price">80 SAR</string>
+    <string name="str_end_price">120 SAR</string>
+    <string name="str_amazon">amazon</string>
+    <string name="str_price">Price :</string>
+    <string name="str_sar_1180">SAR 1180</string>
+    <string name="str_location_type">Location Type :</string>
+    <string name="str_nearest">Nearest 5Km :</string>
+    <string name="str_local">Local :</string>
+    <string name="str_reviews">Reviews :</string>
+    <string name="str_rating">(10)</string>
 
 
 </resources>
