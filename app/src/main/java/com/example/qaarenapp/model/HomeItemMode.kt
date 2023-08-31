@@ -1,4 +1,4 @@
-package com.example.qaarenapp
+package com.example.qaarenapp.model
 
 import android.widget.RatingBar
 

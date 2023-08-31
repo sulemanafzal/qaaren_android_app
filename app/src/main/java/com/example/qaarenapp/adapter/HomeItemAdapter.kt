@@ -1,13 +1,9 @@
 package com.example.qaarenapp.adapter
 
-import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.qaarenapp.HomeItemMode
-import com.example.qaarenapp.R
-import com.example.qaarenapp.databinding.ActivityMainBinding
+import com.example.qaarenapp.model.HomeItemMode
 import com.example.qaarenapp.databinding.HomeItemBinding
 
 class HomeItemAdapter(private val dataList: List<HomeItemMode>) :

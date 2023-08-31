@@ -58,6 +58,9 @@ Same as new.</string>
     <string name="tv_productName">Stand</string>
     <string name="str_tv_rating">23</string>
     <string name="str_ratings_amp_reviews"><![CDATA[Ratings & Reviews]]></string>
+    <string name="atr_all_categories">All categories</string>
+    <string name="str_category_name">Category Name</string>
+    <string name="str_notifications">Notifications</string>
 
 
 </resources>

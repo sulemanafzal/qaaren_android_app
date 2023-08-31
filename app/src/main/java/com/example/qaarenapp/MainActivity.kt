@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.profileFragment -> replaceFragment(ProfileFragment())
                 R.id.categoryFragment -> replaceFragment(CategoriesFragment())
                 R.id.homeFragment -> replaceFragment(HomeFragment())
-                //  R.id.settingFragment -> replaceFragment(SettingFragment())
+                R.id.settingFragment -> replaceFragment(SettingFragment())
                 R.id.notificationFragment -> replaceFragment(NotificationsFragment())
             }
             true

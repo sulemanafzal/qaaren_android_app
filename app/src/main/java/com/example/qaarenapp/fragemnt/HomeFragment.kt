@@ -6,8 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.qaarenapp.HomeItemMode
+import com.example.qaarenapp.model.HomeItemMode
 import com.example.qaarenapp.R
 import com.example.qaarenapp.adapter.HomeItemAdapter
 import com.example.qaarenapp.databinding.FragmentHomeBinding
