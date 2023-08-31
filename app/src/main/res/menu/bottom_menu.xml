@@ -3,38 +3,37 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/newsFragment"
+        android:id="@+id/profileFragment"
         android:icon="@drawable/person"
-        android:title="Profile"
+        android:title="@string/str_profile"
         app:background="@drawable/bg_bottom_nav_item"
         app:iconGravity="start"/>
 
     <item
-        android:id="@+id/opinionFragment"
+        android:id="@+id/categoryFragment"
         android:icon="@drawable/categories"
-        android:title="Category"
+        android:title="@string/str_category"
         app:background="@drawable/bg_bottom_nav_item"
         app:iconGravity="start"/>
 
     <item
-        android:id="@+id/threndingFragment"
+        android:id="@+id/homeFragment"
         android:icon="@drawable/home"
-        android:title="Home"
+        android:title="@string/str_home"
         app:background="@drawable/bg_bottom_nav_item"
-
         app:iconGravity="start"/>
 
     <item
-        android:id="@+id/archFragment"
+        android:id="@+id/settingFragment"
         android:icon="@drawable/settings"
-        android:title="Setting"
+        android:title="@string/str_setting"
         app:background="@drawable/bg_bottom_nav_item"
         app:iconGravity="start"/>
 
     <item
-        android:id="@+id/aaaa"
+        android:id="@+id/notificationFragment"
         android:icon="@drawable/bell"
         app:background="@drawable/bg_bottom_nav_item"
-        android:title="Notification"
+        android:title="@string/str_notification"
         app:iconGravity="start"/>
 </menu>

@@ -29,16 +29,19 @@
                 android:text="@string/str_iphone_14_pro"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_14ssp"
-                android:layout_margin="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_10sdp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/tv_companyname"
-                android:layout_width="@dimen/_80sdp"
-                android:layout_height="@dimen/_25sdp"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_22sdp"
                 android:scaleType="centerCrop"
-                android:layout_margin="@dimen/_8sdp"
+                android:padding="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
                 android:fontFamily="@font/font_manrope_bold"
                 android:src="@drawable/amazonlogo"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -63,7 +66,7 @@
                 android:fontFamily="@font/font_manrope_medium"
                 android:text="@string/str_sar_1180"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_14ssp"
+                android:textSize="@dimen/_12ssp"
                 app:layout_constraintBottom_toBottomOf="@+id/textview"
                 app:layout_constraintStart_toEndOf="@+id/textview"
                 app:layout_constraintTop_toTopOf="@id/textview" />
@@ -73,10 +76,10 @@
                 android:layout_height="wrap_content"
                 android:text="@string/str_location_type"
                 android:textSize="@dimen/_12ssp"
+                android:layout_marginTop="@dimen/_4sdp"
                 android:fontFamily="@font/font_manrope_regular"
                 app:layout_constraintTop_toBottomOf="@id/tv_price"
                 app:layout_constraintStart_toStartOf="@id/textview"
-                android:layout_marginTop="@dimen/_6sdp"
                 android:id="@+id/textview_location"
                 />
 
@@ -90,7 +93,7 @@
                 android:layout_marginStart="@dimen/_4sdp"
                 android:textColor="@color/black"
                 android:fontFamily="@font/font_manrope_medium"
-                android:textSize="@dimen/_14ssp"
+                android:textSize="@dimen/_12ssp"
                 app:layout_constraintBottom_toBottomOf="@+id/textview_location"
                 app:layout_constraintStart_toEndOf="@+id/textview_location"
                 app:layout_constraintTop_toTopOf="@+id/textview_location" />
@@ -99,8 +102,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/str_nearest"
-                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_4sdp"
                 android:id="@+id/tv_nearest"
+                android:textSize="@dimen/_12ssp"
                 android:fontFamily="@font/font_manrope_regular"
                 app:layout_constraintStart_toStartOf="@+id/textview_location"
                 app:layout_constraintTop_toBottomOf="@+id/textview_location" />
@@ -111,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font_manrope_medium"
                 android:text="NO"
-                android:textSize="@dimen/_14ssp"
+                android:textSize="@dimen/_12ssp"
                 android:layout_marginStart="@dimen/_4sdp"
                 android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="@+id/tv_nearest"
@@ -123,9 +127,11 @@
                 android:id="@+id/tv_reviews"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/str_reviews"
                 android:layout_marginTop="@dimen/_6sdp"
+                android:text="@string/str_reviews"
                 android:textSize="@dimen/_12ssp"
+                android:layout_marginBottom="@dimen/_6sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/tv_nearest"
                 app:layout_constraintTop_toBottomOf="@+id/tv_nearest" />
 
@@ -159,7 +165,7 @@
                 android:layout_marginBottom="@dimen/_4sdp"
                 android:text="12-12-2023"
                 android:textSize="@dimen/_12ssp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/textView"
                 app:layout_constraintEnd_toEndOf="@+id/tv_companyname"
                 app:layout_constraintTop_toTopOf="@+id/textView" />
 
