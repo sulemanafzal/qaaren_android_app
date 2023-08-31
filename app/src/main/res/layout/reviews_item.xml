@@ -136,12 +136,11 @@
         android:id="@+id/number_reviews_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
         android:text="12"
         android:textSize="@dimen/_12ssp"
         app:layout_constraintBottom_toBottomOf="@id/progress_bar_1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/progress_bar_1"
         app:layout_constraintTop_toTopOf="@id/progress_bar_1" />
 
 
@@ -162,12 +161,11 @@
         android:id="@+id/number_reviews_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/_6sdp"
         android:text="8"
         android:textSize="@dimen/_12ssp"
         app:layout_constraintBottom_toBottomOf="@+id/progress_bar_2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/progress_bar_1"
+        app:layout_constraintEnd_toEndOf="@+id/number_reviews_1"
+        app:layout_constraintStart_toStartOf="@+id/number_reviews_1"
         app:layout_constraintTop_toTopOf="@+id/progress_bar_2" />
 
     <ProgressBar
@@ -187,12 +185,11 @@
         android:id="@+id/number_reviews_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/_6sdp"
         android:text="6"
         android:textSize="@dimen/_12ssp"
         app:layout_constraintBottom_toBottomOf="@+id/progress_bar_3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/progress_bar_1"
+        app:layout_constraintEnd_toEndOf="@+id/number_reviews_2"
+        app:layout_constraintStart_toStartOf="@+id/number_reviews_2"
         app:layout_constraintTop_toTopOf="@+id/progress_bar_3" />
 
 
@@ -213,12 +210,11 @@
         android:id="@+id/number_reviews_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/_6sdp"
         android:text="5"
         android:textSize="@dimen/_12ssp"
         app:layout_constraintBottom_toBottomOf="@+id/progress_bar_4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/progress_bar_1"
+        app:layout_constraintEnd_toEndOf="@+id/number_reviews_3"
+        app:layout_constraintStart_toStartOf="@+id/number_reviews_3"
         app:layout_constraintTop_toTopOf="@+id/progress_bar_4" />
 
 
@@ -239,13 +235,101 @@
         android:id="@+id/number_reviews_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/_6sdp"
         android:text="2"
         android:textSize="@dimen/_12ssp"
         app:layout_constraintBottom_toBottomOf="@+id/progress_bar_5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/progress_bar_1"
+        app:layout_constraintEnd_toEndOf="@+id/number_reviews_4"
+        app:layout_constraintStart_toStartOf="@+id/number_reviews_4"
         app:layout_constraintTop_toTopOf="@+id/progress_bar_5" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_12sdp"
+        android:elevation="@dimen/_4sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_profile"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:elevation="@dimen/_4sdp"
+            app:cardCornerRadius="@dimen/_4sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_profile"
+            app:layout_constraintTop_toBottomOf="@+id/img_profile">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:fontFamily="@font/font_manrope_medium"
+                    android:text="Helena Moore"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RatingBar
+                    android:id="@+id/user_rating"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:rating="4"
+                    android:theme="@style/RatingBar"
+                    app:layout_constraintStart_toStartOf="@+id/user_name"
+                    app:layout_constraintTop_toBottomOf="@+id/user_name" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12-12-2023"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/user_rating"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/user_rating" />
+
+                <TextView
+                    android:id="@+id/user_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:text="@string/str_user_message"
+                    android:textAlignment="textStart"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/user_rating"
+                    app:layout_constraintTop_toBottomOf="@id/user_rating" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
