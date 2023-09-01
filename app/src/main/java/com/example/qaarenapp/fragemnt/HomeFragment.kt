@@ -9,7 +9,9 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.example.qaarenapp.model.HomeItemMode
 import com.example.qaarenapp.R
 import com.example.qaarenapp.adapter.HomeItemAdapter
+import com.example.qaarenapp.adapter.TempAdapter
 import com.example.qaarenapp.databinding.FragmentHomeBinding
+import com.google.android.material.tabs.TabLayoutMediator
 
 class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
@@ -26,57 +28,25 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Sample data to populate the dataList
-        val dataList = listOf(
-
-            HomeItemMode(
-                R.drawable.stand,
-                "30%",
-                "Stand",
-                "6",
-                "24 - 50 SAR",
-
-                ),
-            HomeItemMode(
-                R.drawable.book_shelves,
-                "10%",
-                "Book Shelves",
-                "16",
-                "60 - 150 SAR",
-
-                ),
-            HomeItemMode(
-                R.drawable.sofa,
-                "20%",
-                "Sofa",
-                "5",
-                "70 - 110 SAR",
-
-                ),
-            HomeItemMode(
-                R.drawable.sofa,
-                "50%",
-                "Stand",
-                "60",
-                "24 - 50 SAR",
-
-                ),
-            HomeItemMode(
-                R.drawable.iphone_image,
-                "30%",
-                "Stand",
-                "6",
-                "2400 - 5000 SAR",
-            ),
-            // Add more items as needed
-        )
+        val tempAdapter = TempAdapter(requireActivity())
 
 
-        val adapter = HomeItemAdapter(dataList)
-        val spanCount = 2 // Set the number of columns in the grid
-        val layoutManager = GridLayoutManager(requireContext(), spanCount)
-        binding.recyclerView.layoutManager = layoutManager
-        binding.recyclerView.adapter = adapter
+        tempAdapter.addFragment(AllFragment(), "All")
+        tempAdapter.addFragment(HomeCategoryFragment(), "Home")
+        tempAdapter.addFragment(ElectronicsFragment(), "Electronics")
+        tempAdapter.addFragment(GroceryFragment(), "Grocery")
+        tempAdapter.addFragment(ClothsFragment(), "Cloths")
+        tempAdapter.addFragment(EntertainmentFragment(), "Entertainment")
+        tempAdapter.addFragment(GamingFragment(), "Gaming")
+        tempAdapter.addFragment(ToysFragment(), "Toys")
+        tempAdapter.addFragment(PhotographyFragment(), "Photography")
+        tempAdapter.addFragment(WearablesFragment(), "Wearables")
+
+
+        binding.viewPager2.adapter = tempAdapter
+
+        TabLayoutMediator(binding.tabLayout, binding.viewPager2) { tab, position ->
+            tab.text = tempAdapter.getTitle(position)
+        }.attach()
     }
-
 }

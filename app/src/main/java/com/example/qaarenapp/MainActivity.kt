@@ -18,12 +18,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        seekBarLayout = layoutInflater.inflate(R.layout.dialog_progress, null)
 
-        binding.viewFilter.setOnClickListener {
-            showSeekBarLayout()
-
+        // Automatically select HomeFragment at app launch
+        if (savedInstanceState == null) {
+            replaceFragment(HomeFragment())
+            binding.bottomNav.selectedItemId = R.id.homeFragment
         }
+
 
         replaceFragment(HomeFragment())
 
@@ -47,16 +48,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showSeekBarLayout() {
-        val dialog = androidx.appcompat.app.AlertDialog.Builder(this)
-            .setView(seekBarLayout)
-            .create()
-
-            dialog.show()
-        dialog.window?.setGravity(Gravity.BOTTOM)
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
-
-
-
 
     }
 

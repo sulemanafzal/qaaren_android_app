@@ -19,8 +19,8 @@
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_12sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_margin="@dimen/_8sdp"
         android:layout_marginEnd="@dimen/_4sdp"
         android:background="@drawable/btn_corner"
         android:backgroundTint="@color/gray"
@@ -31,12 +31,13 @@
 
     <ImageView
         android:id="@+id/view_filter"
-        android:layout_width="@dimen/_50sdp"
+        android:layout_width="@dimen/_40sdp"
         android:layout_height="0dp"
         android:background="@drawable/btn_corner"
         android:src="@drawable/filter"
         android:elevation="@dimen/_4sdp"
         android:backgroundTint="#FF6E41"
+        android:padding="@dimen/_6sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/searchView"
         app:layout_constraintBottom_toBottomOf="@id/searchView"

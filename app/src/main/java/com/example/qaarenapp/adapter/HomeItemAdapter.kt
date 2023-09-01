@@ -25,16 +25,15 @@ class HomeItemAdapter(private val dataList: List<HomeItemMode>) :
         return dataList.size
     }
 
-    inner class ViewHolder(private val binding: HomeItemBinding) :
-        RecyclerView.ViewHolder(binding.root) {
+    inner class ViewHolder(private val binding: HomeItemBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(data: HomeItemMode) {
-            // Declare your views here
 
-            binding.imageView.setImageResource(data.imagemain)
+            // Declare your views here
+            binding.productImage.setImageResource(data.imagemain)
             //binding.rating.rating = data.rating_bar
             binding.textViewRating.text = data.tv_rating
             binding.tvStarttoendprice.text = data.price_start_to_end
-            binding.tvProductName.text = data.txt_productName
+            binding.productName.text = data.txt_productName
             binding.tvPercent.text = data.txt_percent
 
             // Initialize your views and set up any additional logic here

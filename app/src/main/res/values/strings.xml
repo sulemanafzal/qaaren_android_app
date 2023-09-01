@@ -54,13 +54,15 @@ Same as new.</string>
     <string name="str_profile">Profile</string>
     <string name="str_select_price_range">Select Price Range</string>
     <string name="str_apply_filter">Apply Filter</string>
-    <string name="str_startTo_endprice">600 - 1200 SAR</string>
+    <string name="str_startTo_endprice">2000 - 6000 SAR</string>
     <string name="tv_productName">Stand</string>
     <string name="str_tv_rating">23</string>
     <string name="str_ratings_amp_reviews"><![CDATA[Ratings & Reviews]]></string>
     <string name="atr_all_categories">All categories</string>
     <string name="str_category_name">Category Name</string>
     <string name="str_notifications">Notifications</string>
+    <string name="str_popular_products">Popular Products</string>
+    <string name="str_super_sale">Super summer sale</string>
 
 
 </resources>
