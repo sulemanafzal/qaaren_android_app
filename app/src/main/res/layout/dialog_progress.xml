@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:backgroundTint="@null"
-    android:background="@drawable/dialog_background_cornertop"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@android:color/transparent"
     >
-
     <View
         android:layout_width="@dimen/_100sdp"
         android:layout_height="@dimen/_6sdp"
@@ -66,12 +64,15 @@
         app:layout_constraintTop_toBottomOf="@+id/seekbar" />
 
     <Button
+        android:id="@+id/btn_applay_filter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_26sdp"
+        android:padding="@dimen/_12sdp"
         android:text="@string/str_apply_filter"
         android:textSize="@dimen/_14sdp"
-        android:layout_marginTop="@dimen/_16sdp"
-        android:padding="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewStart" />

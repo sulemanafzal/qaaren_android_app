@@ -31,7 +31,7 @@
     <string name="str_sar_1180">SAR 1180</string>
     <string name="str_location_type">Location Type :</string>
     <string name="str_nearest">Nearest 5Km :</string>
-    <string name="str_local">Local :</string>
+    <string name="str_local">Local</string>
     <string name="str_reviews">Reviews :</string>
     <string name="str_rating">(10)</string>
     <string name="large_text">
@@ -63,6 +63,18 @@ Same as new.</string>
     <string name="str_notifications">Notifications</string>
     <string name="str_popular_products">Popular Products</string>
     <string name="str_super_sale">Super summer sale</string>
-
-
+    <string name="str_about_description">Description</string>
+    <string name="str_description">Lowest price for Apple iPhone 14 Pro Max 128GB is £957.50.This is currently
+        the cheapest offer among 43 stores. Who
+    would have  thought 20 years ago that mobile phone could be photographer\'s dream? Well, that might be just a
+        bit of an exaggeration, but there\'s no denying that we\'ve come a
+    way.iPhone 14 Pro Max improves on its predecessors and
+    delivers a better photography experience
+        than ever before. ources</string>
+    <string name="str_user_name">Helena Moore</string>
+    <string name="str_wishlist">Wishlist</string>
+    <string name="str_privacy_policy">Privacy Policy</string>
+    <string name="str_language">Language</string>
+    <string name="str_dark_mode">Dark Mode</string>
+    <string name="str_about_qaarin">About Qaarin</string>
 </resources>

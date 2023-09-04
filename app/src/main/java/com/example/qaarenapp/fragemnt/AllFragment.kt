@@ -44,7 +44,7 @@ class AllFragment : Fragment() {
             "16",
             "60 - 150 SAR",
 
-            ),
+            ),  
     )
 
         val adapter = HomeItemAdapter(dataLis)

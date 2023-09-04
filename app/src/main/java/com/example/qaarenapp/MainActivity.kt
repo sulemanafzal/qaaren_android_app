@@ -1,5 +1,6 @@
 package com.example.qaarenapp
 
+import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
@@ -9,6 +10,7 @@ import android.view.WindowManager
 import androidx.fragment.app.Fragment
 import com.example.qaarenapp.databinding.ActivityMainBinding
 import com.example.qaarenapp.fragemnt.*
+import com.google.android.material.bottomsheet.BottomSheetDialog
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -17,14 +19,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
-        // Automatically select HomeFragment at app launch
-        if (savedInstanceState == null) {
-            replaceFragment(HomeFragment())
-            binding.bottomNav.selectedItemId = R.id.homeFragment
-        }
-
 
         replaceFragment(HomeFragment())
 
@@ -42,12 +36,7 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
-        replaceFragment(HomeFragment())
-
-
-    }
-
-    private fun showSeekBarLayout() {
+        binding.bottomNav.selectedItemId = R.id.homeFragment
 
     }
 

@@ -1,48 +1,58 @@
 package com.example.qaarenapp.adapter
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.RadioButton
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.qaarenapp.R
-import com.example.qaarenapp.model.CategoryItemModel
 
-class CategoryAdapter(private val languageList: ArrayList<CategoryItemModel>) :
-    RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
+class CategoryAdapter(private val context: Context, private val list: List<String>) :
+    RecyclerView.Adapter<CategoryAdapter.CategoryVH>() {
 
-    override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int
-    ): ViewHolder {
-        val view: View =
-            LayoutInflater.from(parent.context).inflate(R.layout.category_item, parent, false)
-        return ViewHolder(view)
+    private val selectedItems = mutableListOf<Int>()
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryVH {
+        val view = LayoutInflater.from(context).inflate(R.layout.category_item, parent, false)
+        return CategoryVH(view)
     }
 
-    override fun onBindViewHolder(
-        holder: ViewHolder,
-        position: Int
-    ) {
-        val languageItem: CategoryItemModel = languageList[position]
-        holder.languageNameTextView.text = languageItem.category
-        holder.radioButton.isChecked = languageItem.isSelected
-        holder.radioButton.setOnClickListener {
-            for (item in languageList) {
-                item.isSelected
-            }
-            languageItem.isSelected
-            notifyDataSetChanged()
-        }
+    override fun onBindViewHolder(holder: CategoryVH, position: Int) {
+        holder.radioButton.isChecked = selectedItems.contains(position)
+        holder.loadData(position)
     }
 
     override fun getItemCount(): Int {
-        return languageList.size
+        return list.size
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val languageNameTextView: TextView = itemView.findViewById(R.id.category_name)
+    inner class CategoryVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        private val categoryName: TextView = itemView.findViewById(R.id.category_name)
         val radioButton: RadioButton = itemView.findViewById(R.id.radio_button)
+
+        fun loadData(position: Int) {
+            categoryName.text = list[position]
+            val listener = View.OnClickListener {
+                if (selectedItems.contains(adapterPosition)) {
+                    selectedItems.remove(adapterPosition)
+                } else {
+                    selectedItems.add(adapterPosition)
+                }
+                notifyDataSetChanged()
+                // You can also handle item click actions here
+                // For example, showing a Toast for selected items
+                val selectedCategoryNames = selectedItems.map { list[it] }
+                Toast.makeText(
+                    context,
+                    "Selected : ${selectedCategoryNames.joinToString()}",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+            itemView.setOnClickListener(listener)
+            radioButton.setOnClickListener(listener)
+        }
     }
 }

@@ -34,129 +34,90 @@
 
     <TextView
         android:id="@+id/email"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_20sdp"
-        android:text="Email"
         android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_22sdp"
+        android:drawableEnd="@drawable/ic_next"
+        android:layout_marginStart="@dimen/_22sdp"
         android:fontFamily="@font/font_manrope_medium"
+        android:text="@string/str_email"
         android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/_20sdp"
-        android:src="@drawable/ic_next"
-        app:layout_constraintBottom_toBottomOf="@+id/email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/email" />
-
-
 
 
     <TextView
         android:id="@+id/about_qaaren"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_20sdp"
-        android:text="About Qaarin"
+        android:drawableEnd="@drawable/ic_next"
+        android:text="@string/str_about_qaarin"
         android:textSize="@dimen/_14ssp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintStart_toStartOf="@+id/email"
         app:layout_constraintTop_toBottomOf="@+id/email" />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/_20sdp"
-        android:src="@drawable/ic_next"
-        app:layout_constraintBottom_toBottomOf="@+id/about_qaaren"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/about_qaaren" />
-
 
 
     <TextView
         android:id="@+id/privacy_policy"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_20sdp"
-        android:text="Privacy Policy"
+        android:drawableEnd="@drawable/ic_next"
+        android:text="@string/str_privacy_policy"
         android:textSize="@dimen/_14ssp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/about_qaaren"
+        app:layout_constraintStart_toStartOf="@+id/about_qaaren"
         app:layout_constraintTop_toBottomOf="@+id/about_qaaren" />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/_20sdp"
-        android:src="@drawable/ic_next"
-        app:layout_constraintBottom_toBottomOf="@+id/privacy_policy"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/privacy_policy" />
-
 
 
     <TextView
         android:id="@+id/wishlist"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_20sdp"
-        android:text="Wishlist"
+        android:drawableEnd="@drawable/ic_next"
+        android:text="@string/str_wishlist"
         android:textSize="@dimen/_14ssp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/privacy_policy"
+        app:layout_constraintStart_toStartOf="@+id/privacy_policy"
         app:layout_constraintTop_toBottomOf="@+id/privacy_policy" />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/_20sdp"
-        android:src="@drawable/ic_next"
-        app:layout_constraintBottom_toBottomOf="@+id/wishlist"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/wishlist" />
-
-
 
 
     <TextView
         android:id="@+id/language"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_20sdp"
-        android:text="Language"
+        android:drawableEnd="@drawable/ic_next"
+        android:text="@string/str_language"
         android:textSize="@dimen/_14ssp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/wishlist"
+        app:layout_constraintStart_toStartOf="@+id/wishlist"
         app:layout_constraintTop_toBottomOf="@+id/wishlist" />
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/_20sdp"
-        android:src="@drawable/ic_next"
-        app:layout_constraintBottom_toBottomOf="@+id/language"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/language" />
 
 
     <TextView
         android:id="@+id/dark_mode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_20sdp"
-        android:text="Dark Mode"
+        android:text="@string/str_dark_mode"
         android:textSize="@dimen/_14ssp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/language"
         app:layout_constraintTop_toBottomOf="@+id/language" />
+
     <Switch
         android:id="@+id/toggle_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:theme="@style/SCBSwitch"
-        android:layout_marginEnd="@dimen/_20sdp"
         app:layout_constraintBottom_toBottomOf="@+id/dark_mode"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/dark_mode" />
+        app:layout_constraintEnd_toEndOf="@+id/language"
+        app:layout_constraintTop_toTopOf="@+id/dark_mode"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,24 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".fragemnt.HomeFragment">
 
-
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:background="@drawable/btn_corner"
+        android:backgroundTint="@color/gray"
+        android:drawingCacheQuality="high"
+        app:layout_constraintEnd_toStartOf="@+id/view_filter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/view_filter"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="0dp"
+        android:background="@drawable/btn_corner"
+        android:src="@drawable/filter"
+        android:elevation="@dimen/_4sdp"
+        android:backgroundTint="#FF6E41"
+        android:padding="@dimen/_6sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/searchView"
+        app:layout_constraintBottom_toBottomOf="@id/searchView"
+        android:layout_marginEnd="@dimen/_4sdp"
+        />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:tabIndicatorHeight="0dp"
-        android:layout_marginTop="@dimen/_4sdp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:tabBackground="@drawable/tab_background"
         app:tabGravity="fill"
+        android:layout_marginTop="@dimen/_4sdp"
         app:tabIndicatorColor="@color/gray"
         app:tabIndicatorFullWidth="true"
+        app:tabIndicatorHeight="0dp"
         app:tabMode="scrollable"
         app:tabSelectedTextColor="@color/white"
-        app:tabTextAppearance="@style/TabLayoutStyle"
-        app:tabBackground="@drawable/tab_background" />
+        app:tabTextAppearance="@style/TabLayoutStyle" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager2"

@@ -63,7 +63,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_4sdp"
-                android:fontFamily="@font/font_manrope_medium"
+                android:fontFamily="@font/font_manrope_bold"
                 android:text="@string/str_sar_1180"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_12ssp"
@@ -92,7 +92,7 @@
                 android:text="@string/str_local"
                 android:layout_marginStart="@dimen/_4sdp"
                 android:textColor="@color/black"
-                android:fontFamily="@font/font_manrope_medium"
+                android:fontFamily="@font/font_manrope_bold"
                 android:textSize="@dimen/_12ssp"
                 app:layout_constraintBottom_toBottomOf="@+id/textview_location"
                 app:layout_constraintStart_toEndOf="@+id/textview_location"
@@ -103,24 +103,24 @@
                 android:layout_height="wrap_content"
                 android:text="@string/str_nearest"
                 android:layout_marginTop="@dimen/_4sdp"
-                android:id="@+id/tv_nearest"
+                android:id="@+id/nearest"
                 android:textSize="@dimen/_12ssp"
                 android:fontFamily="@font/font_manrope_regular"
                 app:layout_constraintStart_toStartOf="@+id/textview_location"
                 app:layout_constraintTop_toBottomOf="@+id/textview_location" />
 
             <TextView
-                android:id="@+id/tv"
+                android:id="@+id/tv_nearest"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/font_manrope_medium"
+                android:fontFamily="@font/font_manrope_bold"
                 android:text="NO"
                 android:textSize="@dimen/_12ssp"
                 android:layout_marginStart="@dimen/_4sdp"
                 android:textColor="@color/black"
-                app:layout_constraintBottom_toBottomOf="@+id/tv_nearest"
-                app:layout_constraintStart_toEndOf="@+id/tv_nearest"
-                app:layout_constraintTop_toTopOf="@+id/tv_nearest" />
+                app:layout_constraintBottom_toBottomOf="@+id/nearest"
+                app:layout_constraintStart_toEndOf="@+id/nearest"
+                app:layout_constraintTop_toTopOf="@+id/nearest" />
 
 
             <TextView
@@ -132,8 +132,8 @@
                 android:textSize="@dimen/_12ssp"
                 android:layout_marginBottom="@dimen/_6sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/tv_nearest"
-                app:layout_constraintTop_toBottomOf="@+id/tv_nearest" />
+                app:layout_constraintStart_toStartOf="@+id/nearest"
+                app:layout_constraintTop_toBottomOf="@+id/nearest" />
 
             <RatingBar
                 android:id="@+id/rating"
@@ -148,7 +148,7 @@
                 app:layout_constraintTop_toTopOf="@+id/tv_reviews" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/tv_total_rating"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_4sdp"
@@ -162,12 +162,11 @@
                 android:id="@+id/date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/_4sdp"
                 android:text="12-12-2023"
                 android:textSize="@dimen/_12ssp"
-                app:layout_constraintBottom_toBottomOf="@+id/textView"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_total_rating"
                 app:layout_constraintEnd_toEndOf="@+id/tv_companyname"
-                app:layout_constraintTop_toTopOf="@+id/textView" />
+                app:layout_constraintTop_toTopOf="@+id/tv_total_rating" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

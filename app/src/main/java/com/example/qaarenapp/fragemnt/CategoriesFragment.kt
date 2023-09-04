@@ -6,10 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.qaarenapp.R
 import com.example.qaarenapp.adapter.CategoryAdapter
 import com.example.qaarenapp.databinding.FragmentCategoriesBinding
-import com.example.qaarenapp.model.CategoryItemModel
 
 class CategoriesFragment : Fragment() {
 
@@ -22,33 +20,47 @@ class CategoriesFragment : Fragment() {
     ): View? {
         binding = FragmentCategoriesBinding.inflate(layoutInflater, container, false)
 
-        val categoryList = arrayListOf(
-            CategoryItemModel("Mobile Phones"),
-            CategoryItemModel("Computers"),
-            CategoryItemModel("Tablets"),
-            CategoryItemModel("Electronics"),
-            CategoryItemModel("Clothing"),
-            CategoryItemModel("Books"),
-            CategoryItemModel("Home Appliances"),
-            CategoryItemModel("Beauty and Personal Care"),
-            CategoryItemModel("Sports and Outdoors"),
-            CategoryItemModel("Furniture"),
-            CategoryItemModel("Toys and Games"),
-            CategoryItemModel("Jewelry"),
-            CategoryItemModel("Health and Wellness"),
-            CategoryItemModel("Automotive"),
-            CategoryItemModel("Grocery"),
-            CategoryItemModel("Music and Movies"),
-            CategoryItemModel("Pet Supplies")
+        // Your list of categories
+        val categoryList = listOf(
+            "Electronics",
+            "Clothing",
+            "Books",
+            "Home & Kitchen",
+            "Sports & Outdoors",
+            "Toys & Games",
+            "Beauty & Personal Care",
+            "Furniture",
+            "Health & Wellness",
+            "Jewelry & Watches",
+            "Automotive",
+            "Grocery & Gourmet",
+            "Music & Instruments",
+            "Pet Supplies",
+            "Tools & Home Improvement",
+            "Office & School Supplies",
+            "Art & Crafts",
+            "Baby Products",
+            "Travel & Luggage",
+            "Shoes",
+            "Electrical Appliances",
+            "Outdoor Clothing",
+            "Computers & Accessories",
+            "Garden & Outdoor",
+            "Food & Beverages",
+            "Fitness & Exercise",
+            "Movies & TV Shows",
+            "Party Supplies",
+            "Home Decor",
+            "Industrial & Scientific"
         )
 
+        // Initialize RecyclerView
+        binding.recyclerview.layoutManager = LinearLayoutManager(requireContext())
 
-        binding.recyclerview.apply {
-            adapter = CategoryAdapter(categoryList)
-            layoutManager = LinearLayoutManager(context)
+        // Create and set the adapter
+        val adapter = CategoryAdapter(requireContext(), categoryList)
+        binding.recyclerview.adapter = adapter
 
-            return binding.root
-
-        }
+        return binding.root
     }
 }

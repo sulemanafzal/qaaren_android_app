@@ -1,9 +1,8 @@
 package com.example.qaarenapp.fragemnt
 
+import android.app.Dialog
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.qaarenapp.model.HomeItemMode
@@ -22,6 +21,26 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
+
+    /*      binding.viewFilter.setOnClickListener {
+            val dialog = Dialog(requireContext())
+            dialog.setContentView(R.layout.dialog_progress)
+            val window = dialog.window
+            window?.setGravity(Gravity.BOTTOM)
+
+            // Get the dialog's window and configure its attributes
+            val layoutParams = WindowManager.LayoutParams()
+            layoutParams.copyFrom(window?.attributes)
+
+            // Set the dialog's width to match the parent width
+            layoutParams.width = WindowManager.LayoutParams.MATCH_PARENT
+            layoutParams.height = WindowManager.LayoutParams.WRAP_CONTENT
+
+            window?.attributes = layoutParams
+
+            dialog.show()
+        }*/
+
         return binding.root
     }
 
@@ -29,7 +48,6 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val tempAdapter = TempAdapter(requireActivity())
-
 
         tempAdapter.addFragment(AllFragment(), "All")
         tempAdapter.addFragment(HomeCategoryFragment(), "Home")
