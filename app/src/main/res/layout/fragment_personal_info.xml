@@ -18,10 +18,10 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
         android:gravity="center"
         android:text="@string/str_personal_information"
         android:textColor="@color/black"
-        android:layout_marginStart="@dimen/_6sdp"
         android:textSize="@dimen/_16ssp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/back_icon"
@@ -49,13 +49,24 @@
                 android:layout_width="@dimen/_70sdp"
                 android:layout_height="@dimen/_70sdp"
                 android:layout_marginTop="@dimen/_45sdp"
-                android:src="@drawable/profiel"
                 android:scaleType="centerCrop"
+                android:src="@drawable/profiel"
                 android:theme="@style/ShapeAppearance.Image.PILL"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+            <ImageView
+                android:id="@+id/camera_logo"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/circle_background"
+                android:src="@drawable/camera_logo"
+                app:layout_constraintBottom_toBottomOf="@+id/img_profile"
+                app:layout_constraintEnd_toEndOf="@+id/img_profile"
+                app:layout_constraintStart_toStartOf="@+id/img_profile"
+                app:layout_constraintTop_toBottomOf="@+id/img_profile" />
 
 
             <EditText
@@ -63,13 +74,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_22sdp"
+                android:layout_marginTop="@dimen/_40sdp"
                 android:layout_marginEnd="@dimen/_22sdp"
                 android:drawablePadding="@dimen/_8sdp"
-                android:layout_marginTop="@dimen/_40sdp"
                 android:fontFamily="@font/font_manrope_medium"
                 android:gravity="top"
                 android:text="@string/str_user_name"
+
                 android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/img_profile" />
@@ -97,6 +110,7 @@
                 android:inputType="textEmailAddress"
                 android:text="@string/str_testEmail"
                 android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
                 app:layout_constraintEnd_toEndOf="@+id/et_userName"
                 app:layout_constraintStart_toStartOf="@+id/et_userName"
                 app:layout_constraintTop_toBottomOf="@+id/et_userName" />
@@ -123,6 +137,7 @@
                 android:fontFamily="@font/font_manrope_medium"
                 android:inputType="textPassword"
                 android:text="@string/user_pasword"
+                android:textSize="@dimen/_12ssp"
                 app:layout_constraintEnd_toEndOf="@+id/et_useremial"
                 app:layout_constraintStart_toStartOf="@+id/et_useremial"
                 app:layout_constraintTop_toBottomOf="@+id/et_useremial" />
@@ -134,8 +149,8 @@
                 android:layout_marginEnd="@dimen/_28sdp"
                 android:fontFamily="@font/font_manrope_bold"
                 android:text="@string/str_edit"
-                android:textSize="@dimen/_12ssp"
                 android:textColor="@color/blue"
+                android:textSize="@dimen/_12ssp"
                 app:layout_constraintBottom_toBottomOf="@+id/et_userpassword"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/et_userpassword" />
@@ -149,6 +164,8 @@
                 android:inputType="number"
                 android:text="@string/str_mobilenumber"
                 android:textColor="@color/black"
+
+                android:textSize="@dimen/_12ssp"
                 app:layout_constraintEnd_toEndOf="@+id/et_userpassword"
                 app:layout_constraintStart_toStartOf="@+id/et_userpassword"
                 app:layout_constraintTop_toBottomOf="@+id/et_userpassword" />
