@@ -44,12 +44,6 @@ class CategoryAdapter(private val context: Context, private val list: List<Strin
                 notifyDataSetChanged()
                 // You can also handle item click actions here
                 // For example, showing a Toast for selected items
-                val selectedCategoryNames = selectedItems.map { list[it] }
-                Toast.makeText(
-                    context,
-                    "Selected : ${selectedCategoryNames.joinToString()}",
-                    Toast.LENGTH_SHORT
-                ).show()
             }
             itemView.setOnClickListener(listener)
             radioButton.setOnClickListener(listener)

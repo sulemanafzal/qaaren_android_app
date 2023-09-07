@@ -2,47 +2,47 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:background="@color/gray"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
+        android:id="@+id/cardView1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_8sdp"
         app:cardCornerRadius="@dimen/_6sdp"
+        android:padding="@dimen/_4sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/tv_itemName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"
                 android:fontFamily="@font/font_manrope_bold"
                 android:text="@string/str_iphone_14_pro"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_14ssp"
-                android:layout_marginTop="@dimen/_8sdp"
-                android:layout_marginStart="@dimen/_10sdp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/tv_companyname"
+                android:id="@+id/logo"
                 android:layout_width="@dimen/_60sdp"
                 android:layout_height="@dimen/_22sdp"
-                android:scaleType="centerCrop"
-                android:padding="@dimen/_2sdp"
                 android:layout_marginTop="@dimen/_8sdp"
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:fontFamily="@font/font_manrope_bold"
+                android:padding="@dimen/_2sdp"
+                android:scaleType="centerCrop"
                 android:src="@drawable/amazonlogo"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -72,40 +72,39 @@
                 app:layout_constraintTop_toTopOf="@id/textview" />
 
             <TextView
+                android:id="@+id/textview_location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/str_location_type"
-                android:textSize="@dimen/_12ssp"
                 android:layout_marginTop="@dimen/_4sdp"
                 android:fontFamily="@font/font_manrope_regular"
-                app:layout_constraintTop_toBottomOf="@id/tv_price"
+                android:text="@string/str_location_type"
+                android:textSize="@dimen/_12ssp"
                 app:layout_constraintStart_toStartOf="@id/textview"
-                android:id="@+id/textview_location"
-                />
+                app:layout_constraintTop_toBottomOf="@id/tv_price" />
 
 
             <TextView
                 android:id="@+id/tv_local"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_4sdp"
-                android:text="@string/str_local"
                 android:layout_marginStart="@dimen/_4sdp"
-                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_4sdp"
                 android:fontFamily="@font/font_manrope_bold"
+                android:text="@string/str_local"
+                android:textColor="@color/black"
                 android:textSize="@dimen/_12ssp"
                 app:layout_constraintBottom_toBottomOf="@+id/textview_location"
                 app:layout_constraintStart_toEndOf="@+id/textview_location"
                 app:layout_constraintTop_toTopOf="@+id/textview_location" />
 
             <TextView
+                android:id="@+id/nearest"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/str_nearest"
                 android:layout_marginTop="@dimen/_4sdp"
-                android:id="@+id/nearest"
-                android:textSize="@dimen/_12ssp"
                 android:fontFamily="@font/font_manrope_regular"
+                android:text="@string/str_nearest"
+                android:textSize="@dimen/_12ssp"
                 app:layout_constraintStart_toStartOf="@+id/textview_location"
                 app:layout_constraintTop_toBottomOf="@+id/textview_location" />
 
@@ -113,11 +112,11 @@
                 android:id="@+id/tv_nearest"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
                 android:fontFamily="@font/font_manrope_bold"
                 android:text="NO"
-                android:textSize="@dimen/_12ssp"
-                android:layout_marginStart="@dimen/_4sdp"
                 android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
                 app:layout_constraintBottom_toBottomOf="@+id/nearest"
                 app:layout_constraintStart_toEndOf="@+id/nearest"
                 app:layout_constraintTop_toTopOf="@+id/nearest" />
@@ -128,21 +127,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginBottom="@dimen/_6sdp"
                 android:text="@string/str_reviews"
                 android:textSize="@dimen/_12ssp"
-                android:layout_marginBottom="@dimen/_6sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/nearest"
                 app:layout_constraintTop_toBottomOf="@+id/nearest" />
 
             <RatingBar
                 android:id="@+id/rating"
+                style="@style/Widget.AppCompat.RatingBar.Small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:rating="4"
-                style="@style/Widget.AppCompat.RatingBar.Small"
-                android:theme="@style/RatingBar"
                 android:layout_marginStart="@dimen/_4sdp"
+                android:rating="4"
+                android:theme="@style/RatingBar"
                 app:layout_constraintBottom_toBottomOf="@+id/tv_reviews"
                 app:layout_constraintStart_toEndOf="@+id/tv_reviews"
                 app:layout_constraintTop_toTopOf="@+id/tv_reviews" />
@@ -165,7 +164,7 @@
                 android:text="12-12-2023"
                 android:textSize="@dimen/_12ssp"
                 app:layout_constraintBottom_toBottomOf="@+id/tv_total_rating"
-                app:layout_constraintEnd_toEndOf="@+id/tv_companyname"
+                app:layout_constraintEnd_toEndOf="@+id/logo"
                 app:layout_constraintTop_toTopOf="@+id/tv_total_rating" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

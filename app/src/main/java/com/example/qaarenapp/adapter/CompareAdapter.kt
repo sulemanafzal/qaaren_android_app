@@ -36,6 +36,7 @@ class CompareAdapter (private val context: Context, private val data: List<Compa
         fun bind(comparedata: CompareModel) {
 
             binding.tvItemName.text =comparedata.itemName
+            binding.logo.setImageResource(comparedata.companyLogo)
             binding.tvPrice.text = comparedata.price
             binding.tvLocal.text = comparedata.locationType
             binding.tvNearest.text = comparedata.nearest

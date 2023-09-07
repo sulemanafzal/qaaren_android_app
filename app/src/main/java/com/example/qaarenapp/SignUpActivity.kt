@@ -14,7 +14,7 @@ class SignUpActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        binding.tvLogin.setOnClickListener {
+        binding.btnSignup.setOnClickListener {
             val intent = Intent(this@SignUpActivity, SignInActivity::class.java)
             startActivity(intent)
 

@@ -177,7 +177,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_4sdp"
             android:fontFamily="@font/manrope_semibold"
-            android:text="@string/str_signin"
+            android:text="@string/str_signup"
             android:textColor="@color/black"
             android:textSize="@dimen/_12ssp"
             app:layout_constraintBottom_toBottomOf="@id/tv_donthaveaccount"

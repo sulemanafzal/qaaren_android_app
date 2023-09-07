@@ -1,13 +1,8 @@
 package com.example.qaarenapp.fragemnt
 
-import android.app.Dialog
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.GridLayoutManager
-import com.example.qaarenapp.model.HomeItemMode
-import com.example.qaarenapp.R
-import com.example.qaarenapp.adapter.HomeItemAdapter
 import com.example.qaarenapp.adapter.TempAdapter
 import com.example.qaarenapp.databinding.FragmentHomeBinding
 import com.google.android.material.tabs.TabLayoutMediator

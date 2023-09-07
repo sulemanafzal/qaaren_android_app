@@ -81,7 +81,8 @@
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
                 android:fontFamily="@font/font_manrope_regular"
-                android:hint="@string/str_email" />
+                android:hint="@string/str_email"
+                />
         </com.google.android.material.textfield.TextInputLayout>
 
 

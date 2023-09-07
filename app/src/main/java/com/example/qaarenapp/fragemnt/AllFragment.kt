@@ -5,14 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.qaarenapp.R
 import com.example.qaarenapp.adapter.HomeItemAdapter
-import com.example.qaarenapp.adapter.TempAdapter
 import com.example.qaarenapp.databinding.FragmentAllBinding
-import com.example.qaarenapp.model.HomeItemMode
-import com.google.android.material.tabs.TabLayoutMediator
+import com.example.qaarenapp.model.HomeItemModel
 
 class AllFragment : Fragment() {
 
@@ -26,28 +23,78 @@ class AllFragment : Fragment() {
         binding = FragmentAllBinding.inflate(layoutInflater, container, false)
 
 
-            // Sample data to populate the dataList
-    val dataLis = listOf(
+        // Sample data to populate the dataList
+        val dataList = listOf(
 
-        HomeItemMode(
-            R.drawable.stand,
-            "30%",
-            "Stand",
-            "6",
-            "24 - 50 SAR",
+            HomeItemModel(
+                "1",
+                "Popular Products",
+                "Super summer sale",
+                R.drawable.iphone_pro_max,
+                "20%",
+                "IPhone 14 Pro max",
+                4.5f,
+                "30",
+                "2400 - 5000 SAR",
+                R.drawable.heart,
 
+                "2",
+                R.drawable.iphone_pro_max,
+                "20%",
+                "IPhone 14 Pro max",
+                4.5f,
+                "30",
+                "2400 - 5000 SAR",
+                R.drawable.heart,
             ),
-        HomeItemMode(
-            R.drawable.book_shelves,
-            "10%",
-            "Book Shelves",
-            "16",
-            "60 - 150 SAR",
 
-            ),  
-    )
+            HomeItemModel(
+                "1",
+                "Popular Products",
+                "Super summer sale",
+                R.drawable.iphone_pro_max,
+                "20%",
+                "IPhone 14 Pro max",
+                4.5f,
+                "30",
+                "2400 - 5000 SAR",
+                R.drawable.heart,
 
-        val adapter = HomeItemAdapter(dataLis)
+                "2",
+                R.drawable.iphone_pro_max,
+                "20%",
+                "IPhone 14 Pro max",
+                4.5f,
+                "30",
+                "2400 - 5000 SAR",
+                R.drawable.heart,
+            ),
+            HomeItemModel(
+                "1",
+                "Popular Products",
+                "Super summer sale",
+                R.drawable.iphone_pro_max,
+                "20%",
+                "IPhone 14 Pro max",
+                4.5f,
+                "30",
+                "2400 - 5000 SAR",
+                R.drawable.heart,
+
+                "2",
+                R.drawable.iphone_pro_max,
+                "20%",
+                "IPhone 14 Pro max",
+                4.5f,
+                "30",
+                "2400 - 5000 SAR",
+                R.drawable.heart,
+            ),
+
+        )
+
+
+        val adapter = HomeItemAdapter(dataList)
         val layoutManager = LinearLayoutManager(context)
         binding.recyclerView.layoutManager = layoutManager
         binding.recyclerView.adapter = adapter

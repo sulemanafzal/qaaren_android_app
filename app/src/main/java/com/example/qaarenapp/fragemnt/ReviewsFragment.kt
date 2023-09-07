@@ -44,6 +44,48 @@ class ReviewsFragment : Fragment() {
                 numberReviews4 = "4",
                 numberReviews5 = "2"
             ),
+            ReviewsModel(
+                ratingReviews = "Rating & Reviews",
+                reviews = "4.8",
+                ratingText = "23",
+                text = "ratings",
+                rating1 = 5.0f,
+                rating2 = 4.0f,
+                rating3 = 3.0f,
+                rating4 = 2.0f,
+                rating5 = 1.0f,
+                progress1 = 70,
+                progress2 = 50,
+                progress3 = 40,
+                progress4 = 20,
+                progress5 = 10,
+                numberReviews1 = "12",
+                numberReviews2 = "9",
+                numberReviews3 = "5",
+                numberReviews4 = "4",
+                numberReviews5 = "2"
+            ),
+            ReviewsModel(
+                ratingReviews = "Rating & Reviews",
+                reviews = "4.8",
+                ratingText = "23",
+                text = "ratings",
+                rating1 = 5.0f,
+                rating2 = 4.0f,
+                rating3 = 3.0f,
+                rating4 = 2.0f,
+                rating5 = 1.0f,
+                progress1 = 70,
+                progress2 = 50,
+                progress3 = 40,
+                progress4 = 20,
+                progress5 = 10,
+                numberReviews1 = "12",
+                numberReviews2 = "9",
+                numberReviews3 = "5",
+                numberReviews4 = "4",
+                numberReviews5 = "2"
+            )
             // Add more MyData objects as needed
         )
 

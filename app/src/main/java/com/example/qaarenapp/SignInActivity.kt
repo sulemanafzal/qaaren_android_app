@@ -13,7 +13,7 @@ class SignInActivity : AppCompatActivity() {
         binding = ActivitySignInBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-    binding.tvSkipLogin.setOnClickListener {
+    binding.btnSignin.setOnClickListener {
         val intent = Intent(this@SignInActivity, MainActivity::class.java)
         startActivity(intent)
     }

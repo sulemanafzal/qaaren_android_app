@@ -45,6 +45,18 @@ class CompareFragment : Fragment() {
             ),
             CompareModel(
                 "IPhone 14 Pro Max",
+
+                R.drawable.ebay_logo,
+                "SAR 1200",
+                "Local",
+                "No",
+                4.0f,
+                5,
+                "03-09-2023"
+            ),
+            CompareModel(
+                "IPhone 14 Pro Max",
+
                 R.drawable.ebay_logo,
                 "SAR 1200",
                 "Local",

@@ -7,40 +7,17 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.qaarenapp.R
+import com.example.qaarenapp.adapter.HomeItemAdapter
 import com.example.qaarenapp.adapter.SamAdapter
-import com.example.qaarenapp.databinding.FragmentCategoriesBinding
 import com.example.qaarenapp.databinding.FragmentHomeCategoryBinding
-import com.example.qaarenapp.model.HomeItemMode
+import com.example.qaarenapp.model.HomeItemModel
 
 class HomeCategoryFragment : Fragment() {
 
     lateinit var binding: FragmentHomeCategoryBinding
-    private val cateItems = arrayListOf<HomeItemMode>(
-        HomeItemMode(
-            R.drawable.iphone_image,
-            "Heatwave: Hospitals under KMC put on standby...",
-            "ARY News",
-            "12.May.12",
-            "323 433"
 
-        ),
-        HomeItemMode(
-            R.drawable.sofa,
-            "Heatwave: Hospitals under KMC put on standby...",
-            "ARY News",
-            "12.May.12",
-            "323 433"
-        ),
-        HomeItemMode(
-            R.drawable.book_shelves,
-            "Heatwave: Hospitals under KMC put on standby...",
-            "ARY News",
-            "12.May.12",
-            "323 433"
 
-        ),
 
-        )
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -48,11 +25,82 @@ class HomeCategoryFragment : Fragment() {
     ): View? {
         binding = FragmentHomeCategoryBinding.inflate(layoutInflater, container, false)
 
-        val samAdapter = SamAdapter(cateItems)
+        val dataList = listOf (
 
+            HomeItemModel(
+                "1",
+                "Popular Products",
+                "Super summer sale",
+                R.drawable.iphone_pro_max,
+                "20%",
+                "IPhone 14 Pro max",
+                4.5f,
+                "30",
+                "2400 - 5000 SAR",
+                R.drawable.heart,
+
+                "2",
+                R.drawable.iphone_pro_max,
+                "20%",
+                "IPhone 14 Pro max",
+                4.5f,
+                "30",
+                "2400 - 5000 SAR",
+                R.drawable.heart,
+            ),
+
+            HomeItemModel(
+                "1",
+                "Popular Products",
+                "Super summer sale",
+                R.drawable.iphone_pro_max,
+                "20%",
+                "IPhone 14 Pro max",
+                4.5f,
+                "30",
+                "2400 - 5000 SAR",
+                R.drawable.heart,
+
+                "2",
+                R.drawable.iphone_pro_max,
+                "20%",
+                "IPhone 14 Pro max",
+                4.5f,
+                "30",
+                "2400 - 5000 SAR",
+                R.drawable.heart,
+            ),
+            HomeItemModel(
+                "1",
+                "Popular Products",
+                "Super summer sale",
+                R.drawable.iphone_pro_max,
+                "20%",
+                "IPhone 14 Pro max",
+                4.5f,
+                "30",
+                "2400 - 5000 SAR",
+                R.drawable.heart,
+
+                "2",
+                R.drawable.iphone_pro_max,
+                "20%",
+                "IPhone 14 Pro max",
+                4.5f,
+                "30",
+                "2400 - 5000 SAR",
+                R.drawable.heart,
+            ),
+
+            )
+
+
+
+
+        val homeadapter = HomeItemAdapter(dataList)
         binding.recyclerview.apply {
             layoutManager = LinearLayoutManager(context)
-            adapter = samAdapter
+            adapter = homeadapter
         }
 
         return binding.root

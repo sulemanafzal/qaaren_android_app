@@ -54,7 +54,7 @@ Same as new.</string>
     <string name="str_profile">Profile</string>
     <string name="str_select_price_range">Select Price Range</string>
     <string name="str_apply_filter">Apply Filter</string>
-    <string name="str_startTo_endprice">2000 - 6000 SAR</string>
+    <string name="str_startTo_endprice">2000 SAR - 6000 SAR</string>
     <string name="tv_productName">Stand</string>
     <string name="str_tv_rating">23</string>
     <string name="str_ratings_amp_reviews"><![CDATA[Ratings & Reviews]]></string>
@@ -71,10 +71,19 @@ Same as new.</string>
     way.iPhone 14 Pro Max improves on its predecessors and
     delivers a better photography experience
         than ever before. ources</string>
-    <string name="str_user_name">Helena Moore</string>
+    <string name="str_user_name">Nigar Gulaly</string>
     <string name="str_wishlist">Wishlist</string>
     <string name="str_privacy_policy">Privacy Policy</string>
     <string name="str_language">Language</string>
     <string name="str_dark_mode">Dark Mode</string>
-    <string name="str_about_qaarin">About Qaarin</string>
+    <string name="str_about_qaarin">About Qaaren</string>
+    <string name="str_edit">edit</string>
+
+    <string name="str_useremail">Sanakhan21@email.com</string>
+    <string name="user_pasword">123123</string>
+    <string name="str_mobilenumber">+92 3478923211</string>
+    <string name="str_save">Save</string>
+    <string name="str_personal_information">Personal Information</string>
+    <string name="str_testEmail">abc12345@gmail.com</string>
+
 </resources>

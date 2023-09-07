@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragemnt.SettingFragment">
 
 
@@ -12,9 +11,9 @@
         android:id="@+id/arrow_back"
         android:layout_width="@dimen/_20sdp"
         android:layout_height="@dimen/_15sdp"
-        android:src="@drawable/back_icon"
-        android:layout_marginTop="@dimen/_20sdp"
         android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/back_icon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,93 +30,209 @@
         app:layout_constraintStart_toEndOf="@+id/arrow_back"
         app:layout_constraintTop_toTopOf="@+id/arrow_back" />
 
-
-    <TextView
-        android:id="@+id/email"
+    <LinearLayout
+        android:id="@+id/layout_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_22sdp"
         android:layout_marginTop="@dimen/_16sdp"
         android:layout_marginEnd="@dimen/_22sdp"
-        android:drawableEnd="@drawable/ic_next"
-        android:layout_marginStart="@dimen/_22sdp"
-        android:fontFamily="@font/font_manrope_medium"
-        android:text="@string/str_email"
-        android:textSize="@dimen/_14ssp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_4sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font_manrope_medium"
+            android:gravity="start|center_vertical"
+            android:text="@string/str_email"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toStartOf="@+id/icon_next" />
+
+        <ImageView
+            android:id="@+id/icon_next_1"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
 
 
-    <TextView
-        android:id="@+id/about_qaaren"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:id="@+id/layout_about_qaaren"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:drawableEnd="@drawable/ic_next"
-        android:text="@string/str_about_qaarin"
-        android:textSize="@dimen/_14ssp"
-        app:layout_constraintEnd_toEndOf="@+id/email"
-        app:layout_constraintStart_toStartOf="@+id/email"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_22sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_4sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_email">
 
+        <TextView
+            android:id="@+id/tv_about_qaaren"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font_manrope_medium"
+            android:gravity="start|center_vertical"
+            android:text="@string/str_about_qaarin"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toStartOf="@+id/icon_next" />
 
-    <TextView
-        android:id="@+id/privacy_policy"
-        android:layout_width="0dp"
+        <ImageView
+            android:id="@+id/icon_next_2"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_privacy_policy"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:drawableEnd="@drawable/ic_next"
-        android:text="@string/str_privacy_policy"
-        android:textSize="@dimen/_14ssp"
-        app:layout_constraintEnd_toEndOf="@+id/about_qaaren"
-        app:layout_constraintStart_toStartOf="@+id/about_qaaren"
-        app:layout_constraintTop_toBottomOf="@+id/about_qaaren" />
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_22sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_4sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_about_qaaren">
 
+        <TextView
+            android:id="@+id/tv_privacy_policy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font_manrope_medium"
+            android:gravity="start|center_vertical"
+            android:text="@string/str_privacy_policy"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toStartOf="@+id/icon_next" />
 
-    <TextView
-        android:id="@+id/wishlist"
-        android:layout_width="0dp"
+        <ImageView
+            android:id="@+id/icon_next_3"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_wishlist"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:drawableEnd="@drawable/ic_next"
-        android:text="@string/str_wishlist"
-        android:textSize="@dimen/_14ssp"
-        app:layout_constraintEnd_toEndOf="@+id/privacy_policy"
-        app:layout_constraintStart_toStartOf="@+id/privacy_policy"
-        app:layout_constraintTop_toBottomOf="@+id/privacy_policy" />
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_22sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_4sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_privacy_policy">
+
+        <TextView
+            android:id="@+id/tv_wishlist"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/font_manrope_medium"
+            android:gravity="start|center_vertical"
+            android:text="@string/str_wishlist"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/icon_next" />
+
+        <ImageView
+            android:id="@+id/icon_next_4"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
 
 
-    <TextView
-        android:id="@+id/language"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:id="@+id/layout_language"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:drawableEnd="@drawable/ic_next"
-        android:text="@string/str_language"
-        android:textSize="@dimen/_14ssp"
-        app:layout_constraintEnd_toEndOf="@+id/wishlist"
-        app:layout_constraintStart_toStartOf="@+id/wishlist"
-        app:layout_constraintTop_toBottomOf="@+id/wishlist" />
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_22sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_4sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_wishlist">
+
+        <TextView
+            android:id="@+id/tv_language"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/font_manrope_medium"
+            android:gravity="start|center_vertical"
+            android:text="@string/str_language"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toStartOf="@+id/icon_next" />
+
+        <ImageView
+            android:id="@+id/icon_next_5"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
 
 
     <TextView
-        android:id="@+id/dark_mode"
+        android:id="@+id/tv_dark_mode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/font_manrope_medium"
         android:text="@string/str_dark_mode"
+        android:textColor="@color/black"
         android:textSize="@dimen/_14ssp"
-        app:layout_constraintStart_toStartOf="@+id/language"
-        app:layout_constraintTop_toBottomOf="@+id/language" />
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        app:layout_constraintStart_toStartOf="@+id/layout_language"
+        app:layout_constraintTop_toBottomOf="@+id/layout_language" />
 
     <Switch
         android:id="@+id/toggle_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:theme="@style/SCBSwitch"
-        app:layout_constraintBottom_toBottomOf="@+id/dark_mode"
-        app:layout_constraintEnd_toEndOf="@+id/language"
-        app:layout_constraintTop_toTopOf="@+id/dark_mode"
-        />
+        app:layout_constraintBottom_toBottomOf="@+id/tv_dark_mode"
+        app:layout_constraintEnd_toEndOf="@+id/layout_language"
+        app:layout_constraintTop_toTopOf="@+id/tv_dark_mode" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
