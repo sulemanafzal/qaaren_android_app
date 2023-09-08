@@ -85,5 +85,8 @@ Same as new.</string>
     <string name="str_save">Save</string>
     <string name="str_personal_information">Personal Information</string>
     <string name="str_testEmail">abc12345@gmail.com</string>
+    <string name="str_selected_categories">Selected Categories</string>
+    <string name="str_selected_sources">Selected Sources</string>
+    <string name="str_browse_all">Browse All</string>
 
 </resources>
