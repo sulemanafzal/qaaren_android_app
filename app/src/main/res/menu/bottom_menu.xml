@@ -10,9 +10,9 @@
         app:iconGravity="start"/>
 
     <item
-        android:id="@+id/categoryFragment"
+        android:id="@+id/customizationFragment"
         android:icon="@drawable/categories"
-        android:title="@string/str_category"
+        android:title="@string/str_customization"
         app:background="@drawable/bg_bottom_nav_item"
         app:iconGravity="start"/>
 
@@ -34,6 +34,6 @@
         android:id="@+id/notificationFragment"
         android:icon="@drawable/bell"
         app:background="@drawable/bg_bottom_nav_item"
-        android:title="@string/str_notification"
+        android:title="@string/str_notifications"
         app:iconGravity="start"/>
 </menu>

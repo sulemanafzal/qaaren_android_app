@@ -127,7 +127,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/font_manrope_regular"
-                android:hint="@string/str_confirmPassword"
+                android:hint="@string/str_confirm_password"
                 android:background="@android:color/transparent"
                 android:inputType="textPassword" />
 
@@ -156,7 +156,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_12sdp"
             android:layout_marginEnd="@dimen/_36sdp"
-            android:text="@string/str_alreadyhaveAccount"
+            android:text="@string/str_already_account"
             android:textSize="@dimen/_12ssp"
             app:layout_constraintEnd_toEndOf="@+id/btn_signup"
             app:layout_constraintStart_toStartOf="@id/btn_signup"

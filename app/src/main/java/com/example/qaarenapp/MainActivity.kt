@@ -1,16 +1,11 @@
 package com.example.qaarenapp
 
-import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Gravity
 import android.view.View
-import android.view.Window
-import android.view.WindowManager
 import androidx.fragment.app.Fragment
 import com.example.qaarenapp.databinding.ActivityMainBinding
 import com.example.qaarenapp.fragemnt.*
-import com.google.android.material.bottomsheet.BottomSheetDialog
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -29,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
             when (item.itemId) {
                 R.id.profileFragment -> replaceFragment(ProfileFragment())
-                R.id.categoryFragment -> replaceFragment(CategoriesFragment())
+                R.id.customizationFragment -> replaceFragment(CustomizationFragment())
                 R.id.homeFragment -> replaceFragment(HomeFragment())
                 R.id.settingFragment -> replaceFragment(SettingFragment())
                 R.id.notificationFragment -> replaceFragment(NotificationsFragment())

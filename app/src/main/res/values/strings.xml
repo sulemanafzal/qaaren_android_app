@@ -1,92 +1,107 @@
 <resources>
     <string name="app_name">QaarenApp</string>
 
-    //Sign up
-    <string name="str_qaaren">Qaaren</string>
-    <string name="str_name">Name</string>
-    <string name="str_email">Email</string>
-    <string name="str_password">Password</string>
-    <string name="str_confirmPassword">Confirm Password</string>
-    <string name="str_signup">SignUp</string>
-    <string name="str_login">Login</string>
-    <string name="str_alreadyhaveAccount">Already have an Account?</string>
+<!--
+    <string name="google_map_api_key">AIzaSyBC2Xdb2ato7ULwuGnDjPLXLAvqUZx_1VM</string>
+-->
 
-
-    // Sign In
-
-    <string name="str_emailaddres">Email Address</string>
-    <string name="str_signinusing">or sign in using</string>
-    <string name="str_facebook">Facebook</string>
-    <string name="str_google">Google</string>
-    <string name="str_signin">Sign In</string>
-    <string name="str_donthaveaccount">Don\'t have an account?</string>
-    <string name="str_skiplogin">Skip Login</string>
-    <string name="str_iphone_14_pro">Iphone 14 Pro</string>
-    <string name="_4_5">4.5</string>
-    <string name="str_price_range">Price Range</string>
-    <string name="str_starting_price">80 SAR</string>
-    <string name="str_end_price">120 SAR</string>
-    <string name="str_amazon">amazon</string>
-    <string name="str_price">Price :</string>
-    <string name="str_sar_1180">SAR 1180</string>
-    <string name="str_location_type">Location Type :</string>
-    <string name="str_nearest">Nearest 5Km :</string>
-    <string name="str_local">Local</string>
-    <string name="str_reviews">Reviews :</string>
-    <string name="str_rating">(10)</string>
-    <string name="large_text">
-        "Material is the metaphor"
-        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
-        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
-        "technologically advanced and open to imagination and magic.\n"
-        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
-        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
-
-    </string>
-    <string name="str_user_message">Amazing phone! The colour is beautiful and the look and feel of it is just breath taking. I didn\'t
-        opt for a larger capacity because I save all my content online. So 128 GB is perfect for me. I would definitely recommend to all.
-        I bought it nearly a month ago I think and I am proud to say phone lasts a while with cool features.
-Same as new.</string>
-    <string name="str_notification">Notification</string>
-    <string name="str_setting">Setting</string>
     <string name="str_home">Home</string>
-    <string name="str_category">Category</string>
     <string name="str_profile">Profile</string>
-    <string name="str_select_price_range">Select Price Range</string>
-    <string name="str_apply_filter">Apply Filter</string>
-    <string name="str_startTo_endprice">2000 SAR - 6000 SAR</string>
-    <string name="tv_productName">Stand</string>
-    <string name="str_tv_rating">23</string>
-    <string name="str_ratings_amp_reviews"><![CDATA[Ratings & Reviews]]></string>
-    <string name="atr_all_categories">All categories</string>
-    <string name="str_category_name">Category Name</string>
+    <string name="str_categories">Categories</string>
+    <string name="str_setting">Settings</string>
     <string name="str_notifications">Notifications</string>
-    <string name="str_popular_products">Popular Products</string>
-    <string name="str_super_sale">Super summer sale</string>
-    <string name="str_about_description">Description</string>
-    <string name="str_description">Lowest price for Apple iPhone 14 Pro Max 128GB is £957.50.This is currently
-        the cheapest offer among 43 stores. Who
-    would have  thought 20 years ago that mobile phone could be photographer\'s dream? Well, that might be just a
-        bit of an exaggeration, but there\'s no denying that we\'ve come a
-    way.iPhone 14 Pro Max improves on its predecessors and
-    delivers a better photography experience
-        than ever before. ources</string>
-    <string name="str_user_name">Nigar Gulaly</string>
+    <string name="str_product_image">Product Image</string>
+    <string name="str_price">Price:</string>
+    <string name="str_view_all">View all</string>
+    <string name="str_tab_layout">Product Tab Layout</string>
+    <string name="str_search">Search</string>
+    <string name="str_filter">Filter</string>
+    <string name="str_select_price_range">Select Price Range</string>
+    <string name="str_sar">SAR</string>
+    <string name="str_apply_filter">Apply Filter</string>
+    <string name="str_skip_login">Skip Login</string>
+    <string name="str_signup">Sign up</string>
+    <string name="str_dont_an_account">Don’t have an account?</string>
+    <string name="str_google">Google</string>
+    <string name="str_facebook">Facebook</string>
+    <string name="str_signinusing">or sign in using</string>
+    <string name="str_signIn">Sign In</string>
+    <string name="str_password">Password</string>
+    <string name="str_email_address">Email Address</string>
+    <string name="str_password_is_required">Password is required!</string>
+    <string name="str_confirm_password_is_required">Confirm password is required!</string>
+    <string name="str_provide_valid_email">Provide a valid email address</string>
+    <string name="str_password_doesn_t_matched">Password doesn\'t matched!</string>
+    <string name="str_email_address_is_required">Email address is required!</string>
+    <string name="str_username_is_required">UserName is required!</string>
+    <string name="str_name">Name</string>
+    <string name="str_confirm_password">Confirm password</string>
+    <string name="str_already_account">Already have an account?</string>
+    <string name="str_login">Login</string>
+    <string name="str_back_arrow">Back Arrow</string>
+    <string name="str_price_range">Price Range:</string>
+    <string name="str_compare">Compare</string>
+    <string name="str_about">About</string>
+    <string name="str_location">Location</string>
+    <string name="str_alerts">Alerts</string>
+    <string name="str_description">Description</string>
+    <string name="str_reviews">Reviews</string>
+
+    <string name="str_temp_description">Lowest price for Apple iPhone 14 Pro Max 128GB is £957.50.
+This is currently the cheapest offer among 43 stores. Who
+would have  thought 20 years ago that mobile phone could be photographer\'s dream? Well, that might be just a  bit of an exaggeration, but there\'s no denying that we\'ve come a long
+way.
+        This is currently the cheapest offer among 43 stores. Who
+would have  thought 20 years ago that mobile phone could be photographer\'s dream? Well, that might be just a  bit of an exaggeration, but there\'s no denying that we\'ve come a long
+way.
+        This is currently the cheapest offer among 43 stores. Who
+would have  thought 20 years ago that mobile phone could be photographer\'s dream? Well, that might be just a  bit of an exaggeration, but there\'s no denying that we\'ve come a long
+way.
+        This is currently the cheapest offer among 43 stores. Who
+would have  thought 20 years ago that mobile phone could be photographer\'s dream? Well, that might be just a  bit of an exaggeration, but there\'s no denying that we\'ve come a long
+way.
+    </string>
+    <string name="str_create_alert">Create Alert</string>
+    <string name="str_notify_me_price_dropped">Notify me when the price has dropped</string>
+    <string name="str_email_to_receive_alerts">Enter email to receive alerts</string>
+    <string name="str_notify_me">Notify me</string>
+    <string name="str_location_type">Location Type:</string>
+    <string name="str_nearest_5km">Nearest 5KM:</string>
+    <string name="str_reviews_with_colon">Reviews:</string>
+    <string name="str_ratings_and_reviews">Rating and Reviews</string>
+    <string name="str_add_review">Add Review</string>
+    <string name="str_add_a_review">Add a review</string>
+    <string name="str_submit_review">Submit Review</string>
+    <string name="str_helpful">Helpful</string>
+    <string name="str_nearest_location">Nearest Location</string>
+    <string name="str_view_full">View Full</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_all_categories">All categories</string>
     <string name="str_wishlist">Wishlist</string>
     <string name="str_privacy_policy">Privacy Policy</string>
     <string name="str_language">Language</string>
     <string name="str_dark_mode">Dark Mode</string>
-    <string name="str_about_qaarin">About Qaaren</string>
-    <string name="str_edit">edit</string>
-
-    <string name="str_useremail">Sanakhan21@email.com</string>
-    <string name="user_pasword">123123</string>
-    <string name="str_mobilenumber">+92 3478923211</string>
-    <string name="str_save">Save</string>
+    <string name="str_about_qaaren">About Qaaren</string>
+    <string name="str_email">Email</string>
+    <string name="str_push_notification">Push Notifications</string>
+    <string name="str_mute_notification">Mute All Notifications</string>
+    <string name="str_login_to_your_profile">Login to your profile</string>
+    <string name="str_my_wishlist">My Wishlist</string>
+    <string name="str_select_sources">Select Sources</string>
     <string name="str_personal_information">Personal Information</string>
-    <string name="str_testEmail">abc12345@gmail.com</string>
-    <string name="str_selected_categories">Selected Categories</string>
+    <string name="str_my_sources">My Sources</string>
+    <string name="str_my_categories">My Categories</string>
+    <string name="str_user_name">User name</string>
+    <string name="str_edit">Edit</string>
+    <string name="str_save">Save</string>
+    <string name="str_done">Done</string>
     <string name="str_selected_sources">Selected Sources</string>
     <string name="str_browse_all">Browse All</string>
+    <string name="str_selected_categories">Selected Categories</string>
+    <string name="str_customization">Customization</string>
+    <string name="str_sources">Sources</string>
+    <string name="str_all_sources">All Sources</string>
+    <string name="str_continue">Continue</string>
 
 </resources>

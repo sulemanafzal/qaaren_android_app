@@ -56,7 +56,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/font_manrope_medium"
-            android:text="@string/str_testEmail"
+            android:text="test1234@gmail.com"
             android:textSize="@dimen/_12ssp"
             app:layout_constraintEnd_toEndOf="@+id/img_profile"
             app:layout_constraintStart_toStartOf="@+id/img_profile"

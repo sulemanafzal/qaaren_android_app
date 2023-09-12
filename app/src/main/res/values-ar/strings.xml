@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">قارين</string>
+
+<!--    <string name="google_map_api_key">AIzaSyBC2Xdb2ato7ULwuGnDjPLXLAvqUZx_1VM</string>-->
+
+    <string name="str_home">بيت</string>
+    <string name="str_profile">حساب تعريفي</string>
+    <string name="str_categories">فئات</string>
+    <string name="str_setting">إعدادات</string>
+    <string name="str_notifications">إشعارات</string>
+    <string name="str_product_image">صورة المنتج</string>
+    <string name="str_price">سعر:</string>
+    <string name="str_view_all">عرض الكل</string>
+    <string name="str_tab_layout">تخطيط علامة تبويب المنتج</string>
+    <string name="str_search">يبحث</string>
+    <string name="str_filter">منقي</string>
+    <string name="str_select_price_range">حدد نطاق السعر</string>
+    <string name="str_sar">ريال سعودي</string>
+    <string name="str_apply_filter">تطبيق الفلتر</string>
+    <string name="str_skip_login">تخطي تسجيل الدخول</string>
+    <string name="str_signup">اشتراك</string>
+    <string name="str_dont_an_account">ليس لديك حساب؟</string>
+    <string name="str_google">جوجل</string>
+    <string name="str_facebook">فيسبوك</string>
+    <string name="str_signinusing">أو تسجيل الدخول باستخدام</string>
+    <string name="str_signIn">تسجيل الدخول</string>
+    <string name="str_password">كلمة المرور</string>
+    <string name="str_email_address">عنوان البريد الإلكتروني</string>
+    <string name="str_password_is_required">كلمة المرور مطلوبة!</string>
+    <string name="str_confirm_password_is_required">تأكيد كلمة المرور مطلوب!</string>
+    <string name="str_provide_valid_email">تقديم عنوان بريد إلكتروني صحيح</string>
+    <string name="str_password_doesn_t_matched">كلمة المرور غير متطابقة!</string>
+    <string name="str_email_address_is_required">عنوان البريد الإلكتروني مطلوب!</string>
+    <string name="str_username_is_required">اسم المستخدم مطلوب!</string>
+    <string name="str_name">اسم</string>
+    <string name="str_confirm_password">تأكيد كلمة المرور</string>
+    <string name="str_already_account">هل لديك حساب؟</string>
+    <string name="str_login">تسجيل الدخول</string>
+    <string name="str_back_arrow">السهم الخلفي</string>
+    <string name="str_price_range">نطاق السعر:</string>
+    <string name="str_compare">يقارن</string>
+    <string name="str_about">عن</string>
+    <string name="str_location">موقع</string>
+    <string name="str_alerts">التنبيهات</string>
+    <string name="str_description">وصف</string>
+    <string name="str_reviews">التعليقات</string>
+
+    <string name="str_temp_description">أدنى سعر ل
+ سعر آيفون 14 برو ماكس 128 جيجابايت هو 957.50 جنيه إسترليني.
+هذا هو العرض الأرخص حاليًا بين 43 متجرًا. من
+كان يعتقد قبل 20 عامًا أن الهاتف المحمول يمكن أن يكون حلم المصور? حسنًا، قد يكون هذا مجرد مبالغة، لكن لا يمكن إنكار أننا قطعنا شوطًا طويلًا
+طريق.
+        هذا هو العرض الأرخص حاليًا بين 43 متجرًا. من
+هل كنت تعتقد قبل 20 عامًا أن الهاتف المحمول قد يكون حلم المصور؟ حسنًا، قد يكون هذا مجرد مبالغة، لكن لا يمكن إنكار أننا قطعنا شوطًا طويلًا
+طريق.
+       هذا هو العرض الأرخص حاليًا بين 43 متجرًا. من
+هل كنت تعتقد قبل 20 عامًا أن الهاتف المحمول قد يكون حلم المصور؟ حسنًا، قد يكون هذا مجرد مبالغة، لكن لا يمكن إنكار أننا قطعنا شوطًا طويلًا
+طريق.
+        هذا هو العرض الأرخص حاليًا بين 43 متجرًا. من
+هل كنت تعتقد قبل 20 عامًا أن الهاتف المحمول قد يكون حلم المصور؟ حسنًا، قد يكون هذا مجرد مبالغة، لكن لا يمكن إنكار أننا قطعنا شوطًا طويلًا
+طريق.
+    </string>
+    <string name="str_create_alert">إنشاء تنبيه</string>
+    <string name="str_notify_me_price_dropped">أعلمني عندما ينخفض ​​السعر</string>
+    <string name="str_email_to_receive_alerts">أدخل البريد الإلكتروني لتلقي التنبيهات</string>
+    <string name="str_notify_me">أشعرني، أعلمني، بلغني</string>
+    <string name="str_location_type">نوع الموقع:</string>
+    <string name="str_nearest_5km">أقرب 5 كيلومترات:</string>
+    <string name="str_reviews_with_colon">التعليقات:</string>
+    <string name="str_ratings_and_reviews">التقييم والمراجعات</string>
+    <string name="str_add_review">إضافة مراجعة</string>
+    <string name="str_add_a_review">إضافة إلى استعراض</string>
+    <string name="str_submit_review">إرسال المراجعة</string>
+    <string name="str_helpful">متعاون</string>
+    <string name="str_nearest_location">أقرب موقع</string>
+    <string name="str_view_full">عرض كامل</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">مرحبا جزء فارغ</string>
+    <string name="str_all_categories">جميع الفئات</string>
+    <string name="str_wishlist">قائمة الرغبات</string>
+    <string name="str_privacy_policy">سياسة الخصوصية</string>
+    <string name="str_language">لغة</string>
+    <string name="str_dark_mode">الوضع المظلم</string>
+    <string name="str_about_qaaren">عن قارين</string>
+    <string name="str_email">بريد إلكتروني</string>
+    <string name="str_push_notification">دفع الإخطارات</string>
+    <string name="str_mute_notification">كتم جميع الإخطارات</string>
+    <string name="str_login_to_your_profile">قم بتسجيل الدخول إلى ملفك الشخصي</string>
+    <string name="str_my_wishlist">قائمة امنياتي</string>
+    <string name="str_select_sources">حدد المصادر</string>
+    <string name="str_personal_information">معلومات شخصية</string>
+    <string name="str_my_sources">مصادري</string>
+    <string name="str_my_categories">فئاتي</string>
+    <string name="str_user_name">اسم المستخدم</string>
+    <string name="str_edit">يحرر</string>
+    <string name="str_save">يحفظ</string>
+    <string name="str_done">منتهي</string>
+    <string name="str_selected_sources">المصادر المختارة</string>
+    <string name="str_browse_all">تصفح الكل</string>
+    <string name="str_selected_categories">الفئات المختارة</string>
+    <string name="str_customization">التخصيص</string>
+    <string name="str_sources">مصادر</string>
+    <string name="str_all_sources">جميع المصادر</string>
+    <string name="str_continue">يكمل</string>
+
+</resources>

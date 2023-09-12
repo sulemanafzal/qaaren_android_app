@@ -46,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_8sdp"
-        android:text="@string/str_starting_price"
+        android:text="120 SAR"
         android:textSize="@dimen/_14ssp"
         android:fontFamily="@font/font_manrope_medium"
         app:layout_constraintStart_toStartOf="@id/seekbar"
@@ -59,7 +59,7 @@
         android:layout_marginTop="@dimen/_8sdp"
         android:textSize="@dimen/_14ssp"
         android:fontFamily="@font/font_manrope_medium"
-        android:text="@string/str_end_price"
+        android:text="200 SAR"
         app:layout_constraintEnd_toEndOf="@+id/seekbar"
         app:layout_constraintTop_toBottomOf="@+id/seekbar" />
 
